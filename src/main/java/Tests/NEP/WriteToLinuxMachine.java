@@ -14,14 +14,14 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 
-public class NepBashCommands {
+public class WriteToLinuxMachine {
 
 
     @Test
 
 
 
-   public static class RunCommandViaSsh {
+    public static class RunCommandViaSsh {
 
         private static final String SSH_HOST = "192.168.90.116";
         private static final String SSH_LOGIN = "root";
@@ -38,7 +38,7 @@ public class NepBashCommands {
 
             ChannelExec channel = (ChannelExec) session.openChannel("exec");
             try {
-                channel.setCommand("rm moshe123.txt");
+                channel.setCommand("rm TrustwaveEndpoint.exe");
                 channel.setInputStream(null);
                 InputStream output = channel.getInputStream();
                 channel.connect();
